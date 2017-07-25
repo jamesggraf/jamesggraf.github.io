@@ -1,0 +1,44 @@
+h1,
+h2,
+h3 {
+  font-family: $text-sans;
+  font-weight: bold;
+}
+
+h1 {
+  color: $color-blue;
+  font-size: $em-xl;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $color-blue;
+  display: inline-block;
+  font-size: $em-l;
+  position: relative;
+  text-transform: uppercase;
+  &:after {
+    background: $color-blue;
+    content: "";
+    display: block;
+    height: $em-xxs;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+  }
+}
+
+h3 {
+  color: $color-grey-darker;
+  font-size: $em-l;
+}
+
+address {
+  font-style: italic;
+}
+
+b {
+  color: $color-black-true;
+  font-weight: bold;
+}

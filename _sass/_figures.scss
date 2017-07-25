@@ -1,0 +1,26 @@
+.resume-section main li {
+  & > header {
+    @include align-items(flex-start);
+    @include flex-direction(column);
+    @include display(flex);
+    @include justify-content(flex-start);
+    @media screen and (min-width: $m) {
+      @include align-items(flex-start);
+      @include flex-direction(row);
+      @include justify-content(space-between);
+    }
+    span,
+    figure {
+      font-style: italic;
+      text-align: right;
+    }
+  }
+  & > main {
+    padding-top: $em;
+  }
+}
+.resume-section main li + li{
+  border-top: 1px solid $color-grey-light;
+  margin-top: $em-l;
+  padding-top: $em-l;
+}

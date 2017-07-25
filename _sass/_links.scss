@@ -1,0 +1,8 @@
+a {
+  color: $color-blue-light;
+  font-family: $text-sans;
+  font-weight: bold;
+  &:hover {
+    color: $color-blue;
+  }
+}

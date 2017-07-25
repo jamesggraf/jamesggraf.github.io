@@ -1,0 +1,41 @@
+.page-content {
+  margin: auto;
+  max-width: $xl;
+  padding: $em-xxl $em $em-xxl;
+  @media screen and (min-width: $l) {
+    padding: $em-xxxxl $em $em-xxxxl;
+  }
+}
+
+.resume-section {
+  @include align-items(flex-start);
+  @include flex-direction(column);
+  @include display(flex);
+  @include justify-content(flex-start);
+  width: 100%;
+  @media screen and (min-width: $l) {
+    @include align-items(flex-start);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+  }
+  & > header {
+    flex-shrink: 0;
+    padding-bottom: $em;
+    width: $s-double-padded;
+    @media screen and (min-width: $l) {
+      padding-bottom: 0;
+    }
+  }
+  & > main {
+    width: 100%;
+  }
+}
+.resume-section + .resume-section {
+  border-top: 1px solid $color-black;
+  margin-top: $em-xxl;
+  padding-top: $em-xxl;
+  @media screen and (min-width: $l) {
+    margin-top: $em-xxxxl;
+    padding-top: $em-xxxxl;
+  }
+}
