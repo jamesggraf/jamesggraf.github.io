@@ -18,3 +18,7 @@
         "content",
         "headers"
 ;
+
+@media print {
+	.page-break	{ page-break-before: always; }
+}
